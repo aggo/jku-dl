@@ -27,9 +27,12 @@ layer_defs.push({type:'softmax', num_classes:10});
 def train_network(x_tr, y_tr, x_va, y_va):
 
     print(x_tr.shape) # 10000L, 1L, 28L, 28L (samples, channels, rows, columns)
+    import numpy
+    # x_tr = numpy.lib.pad(x_tr, ((2,2),(2,2)),'minimum')
+    # x_va = numpy.lib.pad(x_tr, ((2,2),(2,2)),'minimum')
     img_rows = x_tr.shape[2]
     img_cols = x_tr.shape[3]
-    batch_size = 128
+    batch_size = 1
     n_epochs = 12
     # number of convolutional filters to use
     nb_filters = 32
@@ -40,18 +43,21 @@ def train_network(x_tr, y_tr, x_va, y_va):
 
     model = Sequential()  # aka linear stacks of layers
     # apply a 5x5 conv with 5 output filters on a 28x28
-    model.add(Convolution2D(32, 3, 3,
+    model.add(Convolution2D(20, 5, 5,
                             border_mode='valid',
                             input_shape=(1, img_rows, img_cols),
                             activation='relu'))
 
-    model.add(Convolution2D(32, 3, 3, activation='relu'))
-
     model.add(MaxPooling2D(pool_size=(2, 2)))
-    model.add(Dropout(0.25))
+
+    model.add(Convolution2D(100, 5, 5, activation='relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+
 
     model.add(Flatten()) # flattens the input: from (None, 64, 32, 32) to (None, 65536)
-    model.add(Dense(128, activation='relu')) # Dense(100) is a fully-connected layer with 100 hidden units.
+    model.add(Dense(120, activation='relu'))
+    model.add(Dropout(0.25))
+    model.add(Dense(84, activation='relu')) # Dense(100) is a fully-connected layer with 100 hidden units.
     model.add(Dropout(0.5))    # model.add(Dropout(0.5))
     model.add(Dense(output_dim=10, activation='softmax'))
 
