@@ -40,18 +40,18 @@ def train_network(x_tr, y_tr, x_va, y_va):
 
     model = Sequential()  # aka linear stacks of layers
     # apply a 5x5 conv with 5 output filters on a 28x28
-    model.add(Convolution2D(5, 5, 5,
+    model.add(Convolution2D(20, 5, 5,
                             border_mode='valid',
                             input_shape=(1, img_rows, img_cols),
                             activation='relu'))
 
-    model.add(Convolution2D(50, 5, 5, activation='relu'))
+    # model.add(Convolution2D(50, 5, 5, activation='relu'))
 
     model.add(MaxPooling2D(pool_size=(2, 2)))
     # model.add(Dropout(0.5))
 
     model.add(Flatten()) # flattens the input: from (None, 64, 32, 32) to (None, 65536)
-    model.add(Dense(100, activation='relu')) # Dense(100) is a fully-connected layer with 100 hidden units.
+    model.add(Dense(100, activation='sigmoid')) # Dense(100) is a fully-connected layer with 100 hidden units.
     # model.add(Dropout(0.5))    # model.add(Dropout(0.5))
     model.add(Dense(output_dim=10, activation='softmax'))
 

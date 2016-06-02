@@ -2665,3 +2665,57 @@ sample_weight_mode: null
 2016-06-02 21:49:02,030 === Test accuracy: 0.866
 2016-06-02 21:49:02,030 === Done. ================================================
 
+2016-06-02 21:53:11,071 === from Best Practices for Convolutional Neural Networks Applied to Visual Document AnalysisPatrice Y. Simard, Dave Steinkraus, John C. Platt
+2016-06-02 21:53:11,094 === Using validation set instead of the actual testset
+2016-06-02 21:53:22,911 === from Best Practices for Convolutional Neural Networks Applied to Visual Document AnalysisPatrice Y. Simard, Dave Steinkraus, John C. Platt
+2016-06-02 21:53:22,936 === Using validation set instead of the actual testset
+2016-06-02 21:54:05,384 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, !!python/long '28', !!python/long '28']
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 5
+    nb_filter: 20
+    nb_row: 5
+    subsample: !!python/tuple [1, 1]
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id001 !!python/tuple [2, 2]
+    strides: *id001
+    trainable: true
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: sigmoid, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 100, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
+sample_weight_mode: null
+
+2016-06-02 21:54:05,601 === Test score: 0.593684557915
+2016-06-02 21:54:05,601 === Test accuracy: 0.811
+2016-06-02 21:54:05,601 === Done. ================================================
+
