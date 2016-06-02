@@ -5,29 +5,29 @@ Using validation set instead of the actual testset
 (10000L, 1L, 28L, 28L)
 Train on 10000 samples, validate on 2000 samples
 Epoch 1/12
-10000/10000 [==============================] - 11s - loss: 1.3943 - acc: 0.5353 - val_loss: 1.0838 - val_acc: 0.6330
+10000/10000 [==============================] - 22s - loss: 1.3391 - acc: 0.5524 - val_loss: 0.8263 - val_acc: 0.7180
 Epoch 2/12
-10000/10000 [==============================] - 11s - loss: 0.6163 - acc: 0.8067 - val_loss: 0.6749 - val_acc: 0.7750
+10000/10000 [==============================] - 22s - loss: 0.5665 - acc: 0.8232 - val_loss: 0.6677 - val_acc: 0.7835
 Epoch 3/12
-10000/10000 [==============================] - 11s - loss: 0.4587 - acc: 0.8588 - val_loss: 0.5712 - val_acc: 0.8070
+10000/10000 [==============================] - 22s - loss: 0.4136 - acc: 0.8727 - val_loss: 0.6096 - val_acc: 0.8000
 Epoch 4/12
-10000/10000 [==============================] - 11s - loss: 0.3732 - acc: 0.8852 - val_loss: 0.6493 - val_acc: 0.7880
+10000/10000 [==============================] - 22s - loss: 0.3267 - acc: 0.8964 - val_loss: 0.4722 - val_acc: 0.8465
 Epoch 5/12
-10000/10000 [==============================] - 11s - loss: 0.3128 - acc: 0.9015 - val_loss: 0.3792 - val_acc: 0.8765
+10000/10000 [==============================] - 22s - loss: 0.2633 - acc: 0.9152 - val_loss: 0.3269 - val_acc: 0.8950
 Epoch 6/12
-10000/10000 [==============================] - 11s - loss: 0.2730 - acc: 0.9160 - val_loss: 0.3900 - val_acc: 0.8815
+10000/10000 [==============================] - 22s - loss: 0.2166 - acc: 0.9290 - val_loss: 0.3632 - val_acc: 0.8865
 Epoch 7/12
-10000/10000 [==============================] - 11s - loss: 0.2326 - acc: 0.9284 - val_loss: 0.4240 - val_acc: 0.8645
+10000/10000 [==============================] - 22s - loss: 0.1768 - acc: 0.9445 - val_loss: 0.3374 - val_acc: 0.8895
 Epoch 8/12
-10000/10000 [==============================] - 11s - loss: 0.2048 - acc: 0.9358 - val_loss: 0.3554 - val_acc: 0.8900
+10000/10000 [==============================] - 22s - loss: 0.1469 - acc: 0.9518 - val_loss: 0.3399 - val_acc: 0.8835
 Epoch 9/12
-10000/10000 [==============================] - 11s - loss: 0.1755 - acc: 0.9461 - val_loss: 0.3369 - val_acc: 0.8970
+10000/10000 [==============================] - 22s - loss: 0.1174 - acc: 0.9642 - val_loss: 0.4175 - val_acc: 0.8715
 Epoch 10/12
-10000/10000 [==============================] - 11s - loss: 0.1511 - acc: 0.9555 - val_loss: 0.3501 - val_acc: 0.8900
+10000/10000 [==============================] - 22s - loss: 0.0946 - acc: 0.9708 - val_loss: 0.3284 - val_acc: 0.8950
 Epoch 11/12
-10000/10000 [==============================] - 11s - loss: 0.1286 - acc: 0.9622 - val_loss: 0.3381 - val_acc: 0.8935
+10000/10000 [==============================] - 22s - loss: 0.0750 - acc: 0.9770 - val_loss: 0.3146 - val_acc: 0.9105
 Epoch 12/12
-10000/10000 [==============================] - 11s - loss: 0.1097 - acc: 0.9679 - val_loss: 0.3506 - val_acc: 0.8935
+10000/10000 [==============================] - 22s - loss: 0.0587 - acc: 0.9832 - val_loss: 0.2939 - val_acc: 0.9155
 YAML representation:
 class_name: Sequential
 config:
@@ -69,6 +69,24 @@ config:
     nb_row: 5
     subsample: *id001
     trainable: true
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_3
+    nb_col: 5
+    nb_filter: 50
+    nb_row: 5
+    subsample: *id001
+    trainable: true
 - class_name: MaxPooling2D
   config:
     border_mode: valid
@@ -92,8 +110,8 @@ loss: str
 optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
 sample_weight_mode: null
 
-Test score: 0.350560325027
-Test accuracy: 0.8935
+Test score: 0.293860707581
+Test accuracy: 0.9155
 Done. ================================================
 
 

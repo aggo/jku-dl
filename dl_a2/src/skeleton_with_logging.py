@@ -47,6 +47,8 @@ def train_network(x_tr, y_tr, x_va, y_va):
 
     model.add(Convolution2D(50, 5, 5, activation='relu'))
 
+    model.add(Convolution2D(50, 5, 5, activation='relu'))
+
     model.add(MaxPooling2D(pool_size=(2, 2)))
     # model.add(Dropout(0.5))
 
