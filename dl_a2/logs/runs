@@ -6,29 +6,29 @@ Using validation set instead of the actual testset
 (10000L, 1L, 28L, 28L)
 Train on 10000 samples, validate on 2000 samples
 Epoch 1/12
-10000/10000 [==============================] - 5s - loss: 1.4454 - acc: 0.5238 - val_loss: 1.2526 - val_acc: 0.5905
+10000/10000 [==============================] - 11s - loss: 1.7609 - acc: 0.4189 - val_loss: 1.2475 - val_acc: 0.5915
 Epoch 2/12
-10000/10000 [==============================] - 5s - loss: 0.7036 - acc: 0.7775 - val_loss: 0.8506 - val_acc: 0.7205
+10000/10000 [==============================] - 11s - loss: 0.9030 - acc: 0.7354 - val_loss: 0.8400 - val_acc: 0.7465
 Epoch 3/12
-10000/10000 [==============================] - 5s - loss: 0.5365 - acc: 0.8307 - val_loss: 0.6434 - val_acc: 0.7990
+10000/10000 [==============================] - 11s - loss: 0.6952 - acc: 0.8006 - val_loss: 0.7015 - val_acc: 0.7900
 Epoch 4/12
-10000/10000 [==============================] - 5s - loss: 0.4516 - acc: 0.8625 - val_loss: 0.5521 - val_acc: 0.8275
+10000/10000 [==============================] - 11s - loss: 0.5828 - acc: 0.8341 - val_loss: 0.6103 - val_acc: 0.8135
 Epoch 5/12
-10000/10000 [==============================] - 5s - loss: 0.3939 - acc: 0.8775 - val_loss: 0.5367 - val_acc: 0.8195
+10000/10000 [==============================] - 11s - loss: 0.5017 - acc: 0.8606 - val_loss: 0.5569 - val_acc: 0.8345
 Epoch 6/12
-10000/10000 [==============================] - 5s - loss: 0.3420 - acc: 0.8919 - val_loss: 0.4359 - val_acc: 0.8615
+10000/10000 [==============================] - 11s - loss: 0.4454 - acc: 0.8751 - val_loss: 0.5381 - val_acc: 0.8395
 Epoch 7/12
-10000/10000 [==============================] - 5s - loss: 0.3073 - acc: 0.9040 - val_loss: 0.4722 - val_acc: 0.8495
+10000/10000 [==============================] - 11s - loss: 0.3989 - acc: 0.8903 - val_loss: 0.4817 - val_acc: 0.8600
 Epoch 8/12
-10000/10000 [==============================] - 5s - loss: 0.2732 - acc: 0.9161 - val_loss: 0.6280 - val_acc: 0.7950
+10000/10000 [==============================] - 11s - loss: 0.3615 - acc: 0.9027 - val_loss: 0.4408 - val_acc: 0.8665
 Epoch 9/12
-10000/10000 [==============================] - 5s - loss: 0.2463 - acc: 0.9227 - val_loss: 0.5095 - val_acc: 0.8435
+10000/10000 [==============================] - 11s - loss: 0.3274 - acc: 0.9099 - val_loss: 0.4754 - val_acc: 0.8525
 Epoch 10/12
-10000/10000 [==============================] - 5s - loss: 0.2229 - acc: 0.9312 - val_loss: 0.4332 - val_acc: 0.8645
+10000/10000 [==============================] - 11s - loss: 0.3012 - acc: 0.9173 - val_loss: 0.4456 - val_acc: 0.8590
 Epoch 11/12
-10000/10000 [==============================] - 5s - loss: 0.2045 - acc: 0.9359 - val_loss: 0.3860 - val_acc: 0.8775
+10000/10000 [==============================] - 11s - loss: 0.2757 - acc: 0.9258 - val_loss: 0.4934 - val_acc: 0.8480
 Epoch 12/12
-10000/10000 [==============================] - 5s - loss: 0.1837 - acc: 0.9443 - val_loss: 0.4397 - val_acc: 0.8660
+10000/10000 [==============================] - 11s - loss: 0.2528 - acc: 0.9314 - val_loss: 0.4046 - val_acc: 0.8740
 YAML representation:
 class_name: Sequential
 config:
@@ -48,7 +48,7 @@ config:
     input_dtype: float32
     name: convolution2d_1
     nb_col: 5
-    nb_filter: 5
+    nb_filter: 20
     nb_row: 5
     subsample: &id001 !!python/tuple [1, 1]
     trainable: true
@@ -81,7 +81,7 @@ config:
 - class_name: Flatten
   config: {name: flatten_1, trainable: true}
 - class_name: Dense
-  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+  config: {W_constraint: null, W_regularizer: null, activation: sigmoid, activity_regularizer: null,
     b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
     name: dense_1, output_dim: 100, trainable: true}
 - class_name: Dense
@@ -93,8 +93,8 @@ loss: str
 optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
 sample_weight_mode: null
 
-Test score: 0.439739082277
-Test accuracy: 0.866
+Test score: 0.404579951048
+Test accuracy: 0.874
 Done. ================================================
 
 
