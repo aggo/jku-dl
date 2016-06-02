@@ -1,0 +1,1 @@
+removed mnist.csv and mnist-labels.csv

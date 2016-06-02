@@ -1,0 +1,101 @@
+C:\Users\agoia\AppData\Local\Continuum\Anaconda2\python.exe C:/Users/agoia/Dropbox/Projects/JKU/jku-dl/dl_a2/src/skeleton_with_logging.py
+Using Theano backend.
+Using gpu device 0: GeForce GT 730M (CNMeM is enabled with initial size: 75.0% of memory, cuDNN not available)
+from Best Practices for Convolutional Neural Networks Applied to Visual Document AnalysisPatrice Y. Simard, Dave Steinkraus, John C. Platt
+Using validation set instead of the actual testset
+(10000L, 1L, 28L, 28L)
+Train on 10000 samples, validate on 2000 samples
+Epoch 1/12
+10000/10000 [==============================] - 5s - loss: 1.6125 - acc: 0.4615 - val_loss: 1.1350 - val_acc: 0.6245
+Epoch 2/12
+10000/10000 [==============================] - 5s - loss: 0.7234 - acc: 0.7763 - val_loss: 0.7322 - val_acc: 0.7505
+Epoch 3/12
+10000/10000 [==============================] - 5s - loss: 0.5216 - acc: 0.8414 - val_loss: 0.5657 - val_acc: 0.8175
+Epoch 4/12
+10000/10000 [==============================] - 5s - loss: 0.4214 - acc: 0.8722 - val_loss: 0.5496 - val_acc: 0.8160
+Epoch 5/12
+10000/10000 [==============================] - 5s - loss: 0.3518 - acc: 0.8922 - val_loss: 0.4772 - val_acc: 0.8405
+Epoch 6/12
+10000/10000 [==============================] - 5s - loss: 0.3008 - acc: 0.9049 - val_loss: 0.4202 - val_acc: 0.8650
+Epoch 7/12
+10000/10000 [==============================] - 5s - loss: 0.2659 - acc: 0.9191 - val_loss: 0.6093 - val_acc: 0.8050
+Epoch 8/12
+10000/10000 [==============================] - 5s - loss: 0.2314 - acc: 0.9287 - val_loss: 0.3916 - val_acc: 0.8695
+Epoch 9/12
+10000/10000 [==============================] - 5s - loss: 0.2039 - acc: 0.9370 - val_loss: 0.3751 - val_acc: 0.8775
+Epoch 10/12
+10000/10000 [==============================] - 5s - loss: 0.1789 - acc: 0.9484 - val_loss: 0.3738 - val_acc: 0.8760
+Epoch 11/12
+10000/10000 [==============================] - 5s - loss: 0.1590 - acc: 0.9519 - val_loss: 0.3748 - val_acc: 0.8780
+Epoch 12/12
+10000/10000 [==============================] - 5s - loss: 0.1425 - acc: 0.9600 - val_loss: 0.3549 - val_acc: 0.8825
+YAML representation:
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, !!python/long '28', !!python/long '28']
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 5
+    nb_filter: 5
+    nb_row: 5
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 5
+    nb_filter: 50
+    nb_row: 5
+    subsample: *id001
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 100, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
+sample_weight_mode: null
+
+Test score: 0.354863076925
+Test accuracy: 0.8825
+Done. ================================================
+
+
+Process finished with exit code 0

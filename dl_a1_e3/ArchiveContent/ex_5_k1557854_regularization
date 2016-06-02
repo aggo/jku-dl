@@ -1,0 +1,20 @@
+Lambda = 0.01
+Max Deviation layer 0:  0.00968131282421 	/	 1.98741743445e-06
+Max Deviation layer 1:  -0.0350066996925 	/	 -1.44107865187e-06
+Max Deviation layer 2:  0.00744476665427 	/	 7.99976000172
+Lambda = 0.1
+Max Deviation layer 0:  0.096808016667 	/	 1.98741743445e-06
+Max Deviation layer 1:  -0.350065952712 	/	 -1.44107865187e-06
+Max Deviation layer 2:  0.0744553892054 	/	 7.99976000172
+Lambda = 1
+Max Deviation layer 0:  0.968075054669 	/	 1.98741743445e-06
+Max Deviation layer 1:  -3.50065848312 	/	 -1.44107865187e-06
+Max Deviation layer 2:  0.744561614646 	/	 7.99976000172
+Lambda = 10
+Max Deviation layer 0:  9.68074543497 	/	 1.98734638018e-06
+Max Deviation layer 1:  -35.006583787 	/	 -1.44114970614e-06
+Max Deviation layer 2:  7.4456238694 	/	 7.99976000172
+Lambda = 100
+Max Deviation layer 0:  96.8074492381 	/	 1.98763059727e-06
+Max Deviation layer 1:  -350.065836825 	/	 -1.4407233805e-06
+Max Deviation layer 2:  74.4562464164 	/	 7.99976000186

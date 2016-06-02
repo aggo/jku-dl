@@ -1,0 +1,2597 @@
+2016-05-27 12:34:06,703 === Using validation set instead of the actual testset
+2016-05-27 12:34:09,815 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 12:34:09,835 === Test score: 1.29153327942
+2016-05-27 12:34:09,835 === Test accuracy: 0.5725
+2016-05-27 12:34:09,835 === Done.
+
+2016-05-27 14:33:07,740 === Added 0.5 dropout for hidden layers
+2016-05-27 14:33:07,763 === Using validation set instead of the actual testset
+2016-05-27 14:33:14,971 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:33:15,006 === Test score: 1.88724669075
+2016-05-27 14:33:15,006 === Test accuracy: 0.4795
+2016-05-27 14:33:15,006 === Done.
+
+2016-05-27 14:37:02,763 === Added 0.5 dropout for hidden layers
+2016-05-27 14:37:02,786 === Using validation set instead of the actual testset
+2016-05-27 14:37:07,388 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:37:07,424 === Test score: 1.89198031521
+2016-05-27 14:37:07,424 === Test accuracy: 0.4735
+2016-05-27 14:37:07,426 === Done.
+
+2016-05-27 14:37:42,947 === Added 0.2 dropout for hidden layers
+2016-05-27 14:37:42,970 === Using validation set instead of the actual testset
+2016-05-27 14:37:47,615 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:37:47,650 === Test score: 1.42206563854
+2016-05-27 14:37:47,650 === Test accuracy: 0.5725
+2016-05-27 14:37:47,650 === Done.
+
+2016-05-27 14:39:01,479 === Added 0.2 dropout for hidden layers
+2016-05-27 14:39:01,503 === Using validation set instead of the actual testset
+2016-05-27 14:39:06,125 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:39:06,174 === Test score: 1.44778098679
+2016-05-27 14:39:06,174 === Test accuracy: 0.592
+2016-05-27 14:39:06,174 === Done. ================================================
+
+2016-05-27 14:40:12,723 === Added 0.3 dropout for hidden layers
+2016-05-27 14:40:12,744 === Using validation set instead of the actual testset
+2016-05-27 14:40:17,506 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.3, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.3, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:40:17,552 === Test score: 1.55241041565
+2016-05-27 14:40:17,552 === Test accuracy: 0.524
+2016-05-27 14:40:17,552 === Done. ================================================
+
+2016-05-27 14:40:32,148 === Added 0.1 dropout for hidden layers
+2016-05-27 14:40:32,171 === Using validation set instead of the actual testset
+2016-05-27 14:40:36,882 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:40:36,921 === Test score: 1.38439687252
+2016-05-27 14:40:36,921 === Test accuracy: 0.557
+2016-05-27 14:40:36,921 === Done. ================================================
+
+2016-05-27 14:41:02,716 === Added 0.2 dropout for hidden layers
+2016-05-27 14:41:02,740 === Using validation set instead of the actual testset
+2016-05-27 14:41:07,371 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:41:07,408 === Test score: 1.63260347939
+2016-05-27 14:41:07,408 === Test accuracy: 0.442
+2016-05-27 14:41:07,408 === Done. ================================================
+
+2016-05-27 14:41:16,026 === Added 0.2 dropout for hidden layers
+2016-05-27 14:41:16,049 === Using validation set instead of the actual testset
+2016-05-27 14:41:20,665 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:41:20,701 === Test score: 1.45765280914
+2016-05-27 14:41:20,701 === Test accuracy: 0.5415
+2016-05-27 14:41:20,703 === Done. ================================================
+
+2016-05-27 14:54:00,242 === Added 0.2 dropout for hidden layers
+2016-05-27 14:54:00,265 === Using validation set instead of the actual testset
+2016-05-27 14:54:04,973 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:54:05,013 === Test score: 1.38526682281
+2016-05-27 14:54:05,013 === Test accuracy: 0.596
+2016-05-27 14:54:09,154 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_4
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_3, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_5, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_4, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_6, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:54:09,187 === Test score: 1.51249401283
+2016-05-27 14:54:09,187 === Test accuracy: 0.523
+2016-05-27 14:54:13,312 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_7
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_5, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_8, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_6, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_9, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:54:13,355 === Test score: 1.42222800732
+2016-05-27 14:54:13,355 === Test accuracy: 0.5565
+2016-05-27 14:54:17,473 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_10
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_7, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_11, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_8, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_12, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:54:17,509 === Test score: 1.43081051636
+2016-05-27 14:54:17,509 === Test accuracy: 0.542
+2016-05-27 14:54:21,552 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_13
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_9, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_14, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_10, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_15, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:54:21,592 === Test score: 1.58055525589
+2016-05-27 14:54:21,592 === Test accuracy: 0.5165
+2016-05-27 14:54:25,703 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_16
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_11, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_17, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_12, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_18, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:54:25,740 === Test score: 1.48080929947
+2016-05-27 14:54:25,740 === Test accuracy: 0.567
+2016-05-27 14:54:29,848 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_19
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_13, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_20, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_14, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_21, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:54:29,891 === Test score: 1.59677109337
+2016-05-27 14:54:29,891 === Test accuracy: 0.536
+2016-05-27 14:54:34,028 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_22
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_15, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_23, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_16, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_24, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:54:34,066 === Test score: 1.47820076752
+2016-05-27 14:54:34,068 === Test accuracy: 0.5095
+2016-05-27 14:54:38,184 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_25
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_17, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_26, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_18, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_27, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:54:38,224 === Test score: 1.54218307018
+2016-05-27 14:54:38,226 === Test accuracy: 0.482
+2016-05-27 14:54:42,404 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_28
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_19, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_29, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_20, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_30, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:54:42,440 === Test score: 1.37072626686
+2016-05-27 14:54:42,440 === Test accuracy: 0.601
+2016-05-27 14:54:42,441 === Average accuracy over 10 experiments: 0.54295
+2016-05-27 14:54:42,441 === Done. ================================================
+
+2016-05-27 14:55:09,790 === No dropout for hidden layers
+2016-05-27 14:55:09,813 === Using validation set instead of the actual testset
+2016-05-27 14:55:12,884 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:55:12,901 === Test score: 1.23447604084
+2016-05-27 14:55:12,901 === Test accuracy: 0.617
+2016-05-27 14:55:15,579 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_4
+    output_dim: 128
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_5, output_dim: 128, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_6, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:55:15,596 === Test score: 1.35012454891
+2016-05-27 14:55:15,596 === Test accuracy: 0.5425
+2016-05-27 14:55:18,098 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_7
+    output_dim: 128
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_8, output_dim: 128, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_9, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:55:18,117 === Test score: 1.29708180046
+2016-05-27 14:55:18,117 === Test accuracy: 0.579
+2016-05-27 14:55:20,549 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_10
+    output_dim: 128
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_11, output_dim: 128, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_12, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:55:20,563 === Test score: 1.49813509655
+2016-05-27 14:55:20,565 === Test accuracy: 0.465
+2016-05-27 14:55:23,174 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_13
+    output_dim: 128
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_14, output_dim: 128, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_15, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:55:23,196 === Test score: 1.28447854424
+2016-05-27 14:55:23,196 === Test accuracy: 0.5905
+2016-05-27 14:55:25,757 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_16
+    output_dim: 128
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_17, output_dim: 128, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_18, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:55:25,776 === Test score: 1.33632459736
+2016-05-27 14:55:25,776 === Test accuracy: 0.567
+2016-05-27 14:55:28,270 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_19
+    output_dim: 128
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_20, output_dim: 128, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_21, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:55:28,290 === Test score: 1.43129358959
+2016-05-27 14:55:28,290 === Test accuracy: 0.526
+2016-05-27 14:55:30,907 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_22
+    output_dim: 128
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_23, output_dim: 128, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_24, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:55:30,924 === Test score: 1.34298927975
+2016-05-27 14:55:30,924 === Test accuracy: 0.508
+2016-05-27 14:55:34,056 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_25
+    output_dim: 128
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_26, output_dim: 128, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_27, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:55:34,076 === Test score: 1.23105767918
+2016-05-27 14:55:34,076 === Test accuracy: 0.6125
+2016-05-27 14:55:36,529 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_28
+    output_dim: 128
+    trainable: true
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_29, output_dim: 128, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_30, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:55:36,545 === Test score: 1.4148645401
+2016-05-27 14:55:36,545 === Test accuracy: 0.5265
+2016-05-27 14:55:36,545 === Average accuracy over 10 experiments: 0.5534
+2016-05-27 14:55:36,545 === Done. ================================================
+
+2016-05-27 14:59:10,523 === Noticed I do not have multiple hidden layers, the first ReLU is an input layer.
+2016-05-27 14:59:10,525 === Noticed should be using 0.2 dropout for input units and 0.5 for hidden units
+2016-05-27 14:59:10,525 === Dropout of 0.2 for input layer and 0.5 for hidden layer:
+2016-05-27 14:59:10,548 === Using validation set instead of the actual testset
+2016-05-27 14:59:15,151 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_1
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:59:15,187 === Test score: 1.66697042084
+2016-05-27 14:59:15,187 === Test accuracy: 0.481
+2016-05-27 14:59:19,269 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_4
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_3, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_5, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_4, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_6, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:59:19,302 === Test score: 1.58844898129
+2016-05-27 14:59:19,302 === Test accuracy: 0.534
+2016-05-27 14:59:23,506 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_7
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_5, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_8, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_6, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_9, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:59:23,546 === Test score: 1.55777087498
+2016-05-27 14:59:23,546 === Test accuracy: 0.584
+2016-05-27 14:59:27,727 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_10
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_7, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_11, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_8, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_12, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:59:27,770 === Test score: 1.59109559917
+2016-05-27 14:59:27,772 === Test accuracy: 0.521
+2016-05-27 14:59:31,743 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_13
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_9, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_14, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_10, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_15, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:59:31,778 === Test score: 1.62236097336
+2016-05-27 14:59:31,778 === Test accuracy: 0.552
+2016-05-27 14:59:35,964 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_16
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_11, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_17, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_12, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_18, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:59:35,999 === Test score: 1.5568878479
+2016-05-27 14:59:35,999 === Test accuracy: 0.551
+2016-05-27 14:59:40,108 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_19
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_13, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_20, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_14, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_21, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:59:40,144 === Test score: 1.61840356159
+2016-05-27 14:59:40,144 === Test accuracy: 0.5375
+2016-05-27 14:59:44,255 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_22
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_15, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_23, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_16, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_24, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:59:44,290 === Test score: 1.63011994267
+2016-05-27 14:59:44,290 === Test accuracy: 0.538
+2016-05-27 14:59:48,407 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_25
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_17, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_26, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_18, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_27, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:59:48,448 === Test score: 1.56284732628
+2016-05-27 14:59:48,448 === Test accuracy: 0.5555
+2016-05-27 14:59:52,523 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Dense
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, &id001 !!python/long '784']
+    bias: true
+    init: glorot_uniform
+    input_dim: *id001
+    input_dtype: float32
+    name: dense_28
+    output_dim: 128
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_19, p: 0.2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_29, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_20, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_30, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-05-27 14:59:52,559 === Test score: 1.65134562492
+2016-05-27 14:59:52,559 === Test accuracy: 0.5645
+2016-05-27 14:59:52,559 === Average accuracy over 10 experiments: 0.54185
+2016-05-27 14:59:52,559 === Done. ================================================
+
+2016-06-02 12:34:22,134 === Noticed I do not have multiple hidden layers, the first ReLU is an input layer.
+2016-06-02 12:34:22,135 === Noticed should be using 0.2 dropout for input units and 0.5 for hidden units
+2016-06-02 12:34:22,137 === Dropout of 0.2 for input layer and 0.5 for hidden layer:
+2016-06-02 12:34:22,398 === Using validation set instead of the actual testset
+2016-06-02 12:42:37,834 === Noticed I do not have multiple hidden layers, the first ReLU is an input layer.
+2016-06-02 12:42:37,834 === Noticed should be using 0.2 dropout for input units and 0.5 for hidden units
+2016-06-02 12:42:37,834 === Dropout of 0.2 for input layer and 0.5 for hidden layer:
+2016-06-02 12:42:37,907 === Using validation set instead of the actual testset
+2016-06-02 12:48:44,891 === Noticed I do not have multiple hidden layers, the first ReLU is an input layer.
+2016-06-02 12:48:44,891 === Noticed should be using 0.2 dropout for input units and 0.5 for hidden units
+2016-06-02 12:48:44,892 === Dropout of 0.2 for input layer and 0.5 for hidden layer:
+2016-06-02 12:48:44,966 === Using validation set instead of the actual testset
+2016-06-02 19:23:05,884 === Noticed I do not have multiple hidden layers, the first ReLU is an input layer.
+2016-06-02 19:23:05,885 === Noticed should be using 0.2 dropout for input units and 0.5 for hidden units
+2016-06-02 19:23:05,885 === Dropout of 0.2 for input layer and 0.5 for hidden layer:
+2016-06-02 19:23:05,930 === Using validation set instead of the actual testset
+2016-06-02 19:26:00,490 === Noticed I do not have multiple hidden layers, the first ReLU is an input layer.
+2016-06-02 19:26:00,490 === Noticed should be using 0.2 dropout for input units and 0.5 for hidden units
+2016-06-02 19:26:00,490 === Dropout of 0.2 for input layer and 0.5 for hidden layer:
+2016-06-02 19:28:09,700 === Noticed I do not have multiple hidden layers, the first ReLU is an input layer.
+2016-06-02 19:28:09,700 === Noticed should be using 0.2 dropout for input units and 0.5 for hidden units
+2016-06-02 19:28:09,700 === Dropout of 0.2 for input layer and 0.5 for hidden layer:
+2016-06-02 19:28:09,723 === Using validation set instead of the actual testset
+2016-06-02 19:28:34,335 === Noticed I do not have multiple hidden layers, the first ReLU is an input layer.
+2016-06-02 19:28:34,335 === Noticed should be using 0.2 dropout for input units and 0.5 for hidden units
+2016-06-02 19:28:34,335 === Dropout of 0.2 for input layer and 0.5 for hidden layer:
+2016-06-02 19:28:34,359 === Using validation set instead of the actual testset
+2016-06-02 19:30:36,993 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, 28, 28]
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_1, trainable: true}
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_2, trainable: true}
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.25, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 128, trainable: true}
+- class_name: Activation
+  config: {activation: relu, name: activation_3, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+- class_name: Activation
+  config: {activation: softmax, name: activation_4, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-06-02 19:30:37,657 === Test score: 2.3017419281
+2016-06-02 19:30:37,657 === Test accuracy: 0.1125
+2016-06-02 19:32:13,714 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, 28, 28]
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_3
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_5, trainable: true}
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_4
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_6, trainable: true}
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_2
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_3, p: 0.25, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_2, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_3, output_dim: 128, trainable: true}
+- class_name: Activation
+  config: {activation: relu, name: activation_7, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_4, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_4, output_dim: 10, trainable: true}
+- class_name: Activation
+  config: {activation: softmax, name: activation_8, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-06-02 19:32:14,368 === Test score: 2.29997838211
+2016-06-02 19:32:14,368 === Test accuracy: 0.107
+2016-06-02 19:33:50,132 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, 28, 28]
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_5
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_9, trainable: true}
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_6
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_10, trainable: true}
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_3
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_5, p: 0.25, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_3, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_5, output_dim: 128, trainable: true}
+- class_name: Activation
+  config: {activation: relu, name: activation_11, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_6, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_6, output_dim: 10, trainable: true}
+- class_name: Activation
+  config: {activation: softmax, name: activation_12, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-06-02 19:33:50,782 === Test score: 2.29969150162
+2016-06-02 19:33:50,782 === Test accuracy: 0.1135
+2016-06-02 19:35:26,709 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, 28, 28]
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_7
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_13, trainable: true}
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_8
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_14, trainable: true}
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_4
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_7, p: 0.25, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_4, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_7, output_dim: 128, trainable: true}
+- class_name: Activation
+  config: {activation: relu, name: activation_15, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_8, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_8, output_dim: 10, trainable: true}
+- class_name: Activation
+  config: {activation: softmax, name: activation_16, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-06-02 19:35:27,364 === Test score: 2.30791207886
+2016-06-02 19:35:27,364 === Test accuracy: 0.102
+2016-06-02 19:37:03,108 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, 28, 28]
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_9
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_17, trainable: true}
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_10
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_18, trainable: true}
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_5
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_9, p: 0.25, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_9, output_dim: 128, trainable: true}
+- class_name: Activation
+  config: {activation: relu, name: activation_19, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_10, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_10, output_dim: 10, trainable: true}
+- class_name: Activation
+  config: {activation: softmax, name: activation_20, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-06-02 19:37:03,766 === Test score: 2.31949556351
+2016-06-02 19:37:03,766 === Test accuracy: 0.111
+2016-06-02 19:38:39,914 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, 28, 28]
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_11
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_21, trainable: true}
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_12
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_22, trainable: true}
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_6
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_11, p: 0.25, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_6, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_11, output_dim: 128, trainable: true}
+- class_name: Activation
+  config: {activation: relu, name: activation_23, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_12, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_12, output_dim: 10, trainable: true}
+- class_name: Activation
+  config: {activation: softmax, name: activation_24, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-06-02 19:38:40,569 === Test score: 2.30167483521
+2016-06-02 19:38:40,571 === Test accuracy: 0.1105
+2016-06-02 19:40:16,461 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, 28, 28]
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_13
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_25, trainable: true}
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_14
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_26, trainable: true}
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_7
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_13, p: 0.25, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_7, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_13, output_dim: 128, trainable: true}
+- class_name: Activation
+  config: {activation: relu, name: activation_27, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_14, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_14, output_dim: 10, trainable: true}
+- class_name: Activation
+  config: {activation: softmax, name: activation_28, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-06-02 19:40:17,119 === Test score: 2.31104456711
+2016-06-02 19:40:17,119 === Test accuracy: 0.0885
+2016-06-02 19:41:53,115 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, 28, 28]
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_15
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_29, trainable: true}
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_16
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_30, trainable: true}
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_8
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_15, p: 0.25, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_8, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_15, output_dim: 128, trainable: true}
+- class_name: Activation
+  config: {activation: relu, name: activation_31, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_16, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_16, output_dim: 10, trainable: true}
+- class_name: Activation
+  config: {activation: softmax, name: activation_32, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-06-02 19:41:53,770 === Test score: 2.31511181259
+2016-06-02 19:41:53,772 === Test accuracy: 0.1095
+2016-06-02 19:43:29,940 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, 28, 28]
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_17
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_33, trainable: true}
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_18
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_34, trainable: true}
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_9
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_17, p: 0.25, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_9, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_17, output_dim: 128, trainable: true}
+- class_name: Activation
+  config: {activation: relu, name: activation_35, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_18, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_18, output_dim: 10, trainable: true}
+- class_name: Activation
+  config: {activation: softmax, name: activation_36, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {decay: 0.0, lr: 0.009999999776482582, momentum: 0.0, name: SGD, nesterov: false}
+sample_weight_mode: null
+
+2016-06-02 19:43:30,605 === Test score: 2.30951727676
+2016-06-02 19:43:30,605 === Test accuracy: 0.078
+2016-06-02 19:46:16,846 === Noticed I do not have multiple hidden layers, the first ReLU is an input layer.
+2016-06-02 19:46:16,846 === Noticed should be using 0.2 dropout for input units and 0.5 for hidden units
+2016-06-02 19:46:16,846 === Dropout of 0.2 for input layer and 0.5 for hidden layer:
+2016-06-02 19:46:16,871 === Using validation set instead of the actual testset
+2016-06-02 19:47:55,683 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, 28, 28]
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_1, trainable: true}
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: linear
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_2, trainable: true}
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.25, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 128, trainable: true}
+- class_name: Activation
+  config: {activation: relu, name: activation_3, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: linear, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+- class_name: Activation
+  config: {activation: softmax, name: activation_4, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
+sample_weight_mode: null
+
+2016-06-02 19:47:56,338 === Test score: 0.335955033064
+2016-06-02 19:47:56,338 === Test accuracy: 0.89
+2016-06-02 19:47:56,338 === Done. ================================================
+
+2016-06-02 20:31:54,507 === 
+2016-06-02 20:31:54,529 === Using validation set instead of the actual testset
+2016-06-02 20:32:50,384 === 
+2016-06-02 20:32:50,407 === Using validation set instead of the actual testset
+2016-06-02 20:33:01,325 === 
+2016-06-02 20:33:01,348 === Using validation set instead of the actual testset
+2016-06-02 20:37:23,756 === 
+2016-06-02 20:37:23,785 === Using validation set instead of the actual testset
+2016-06-02 20:39:47,457 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, !!python/long '28', !!python/long '28']
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
+sample_weight_mode: null
+
+2016-06-02 20:39:48,098 === Test score: 0.37172988379
+2016-06-02 20:39:48,098 === Test accuracy: 0.8765
+2016-06-02 20:39:48,098 === Done. ================================================
+
+2016-06-02 20:41:27,062 === 
+2016-06-02 20:41:27,085 === Using validation set instead of the actual testset
+2016-06-02 20:43:53,276 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, !!python/long '28', !!python/long '28']
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.5, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
+sample_weight_mode: null
+
+2016-06-02 20:43:53,921 === Test score: 0.265112882495
+2016-06-02 20:43:53,921 === Test accuracy: 0.9195
+2016-06-02 20:43:53,921 === Done. ================================================
+
+2016-06-02 21:03:04,184 === from Best Practices for Convolutional Neural Networks Applied to Visual Document AnalysisPatrice Y. Simard, Dave Steinkraus, John C. Platt
+2016-06-02 21:03:04,207 === Using validation set instead of the actual testset
+2016-06-02 21:04:34,364 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, !!python/long '28', !!python/long '28']
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 5
+    nb_filter: 5
+    nb_row: 5
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 5
+    nb_filter: 50
+    nb_row: 5
+    subsample: *id001
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 100, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
+sample_weight_mode: null
+
+2016-06-02 21:04:34,792 === Test score: 0.299191023469
+2016-06-02 21:04:34,792 === Test accuracy: 0.9035
+2016-06-02 21:04:34,792 === Done. ================================================
+
+2016-06-02 21:08:47,062 === from Best Practices for Convolutional Neural Networks Applied to Visual Document AnalysisPatrice Y. Simard, Dave Steinkraus, John C. Platt
+2016-06-02 21:08:47,085 === Using validation set instead of the actual testset
+2016-06-02 21:10:13,956 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, !!python/long '28', !!python/long '28']
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 5
+    nb_filter: 5
+    nb_row: 5
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 5
+    nb_filter: 50
+    nb_row: 5
+    subsample: *id001
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 100, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
+sample_weight_mode: null
+
+2016-06-02 21:10:14,377 === Test score: 0.354863076925
+2016-06-02 21:10:14,377 === Test accuracy: 0.8825
+2016-06-02 21:10:14,377 === Done. ================================================
+
