@@ -2945,3 +2945,76 @@ sample_weight_mode: null
 2016-06-02 22:15:39,217 === Test accuracy: 0.9155
 2016-06-02 22:15:39,219 === Done. ================================================
 
+2016-06-02 22:33:31,821 === Using validation set instead of the actual testset
+2016-06-02 22:35:29,226 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, !!python/long '28', !!python/long '28']
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: &id001 !!python/tuple [1, 1]
+    trainable: true
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
+    subsample: *id001
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id002 !!python/tuple [2, 2]
+    strides: *id002
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.25, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
+sample_weight_mode: null
+
+2016-06-02 22:35:29,875 === Test score: 0.305702100575
+2016-06-02 22:35:29,875 === Test accuracy: 0.9065
+2016-06-02 22:35:29,875 === Done. ================================================
+

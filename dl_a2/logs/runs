@@ -5,29 +5,29 @@ Using validation set instead of the actual testset
 (10000L, 1L, 28L, 28L)
 Train on 10000 samples, validate on 2000 samples
 Epoch 1/12
-10000/10000 [==============================] - 22s - loss: 1.3391 - acc: 0.5524 - val_loss: 0.8263 - val_acc: 0.7180
+10000/10000 [==============================] - 9s - loss: 1.8481 - acc: 0.3611 - val_loss: 1.0349 - val_acc: 0.7150
 Epoch 2/12
-10000/10000 [==============================] - 22s - loss: 0.5665 - acc: 0.8232 - val_loss: 0.6677 - val_acc: 0.7835
+10000/10000 [==============================] - 9s - loss: 0.9075 - acc: 0.7109 - val_loss: 0.6286 - val_acc: 0.8150
 Epoch 3/12
-10000/10000 [==============================] - 22s - loss: 0.4136 - acc: 0.8727 - val_loss: 0.6096 - val_acc: 0.8000
+10000/10000 [==============================] - 9s - loss: 0.6597 - acc: 0.7934 - val_loss: 0.5105 - val_acc: 0.8380
 Epoch 4/12
-10000/10000 [==============================] - 22s - loss: 0.3267 - acc: 0.8964 - val_loss: 0.4722 - val_acc: 0.8465
+10000/10000 [==============================] - 9s - loss: 0.5458 - acc: 0.8285 - val_loss: 0.4926 - val_acc: 0.8410
 Epoch 5/12
-10000/10000 [==============================] - 22s - loss: 0.2633 - acc: 0.9152 - val_loss: 0.3269 - val_acc: 0.8950
+10000/10000 [==============================] - 9s - loss: 0.4850 - acc: 0.8513 - val_loss: 0.3974 - val_acc: 0.8765
 Epoch 6/12
-10000/10000 [==============================] - 22s - loss: 0.2166 - acc: 0.9290 - val_loss: 0.3632 - val_acc: 0.8865
+10000/10000 [==============================] - 9s - loss: 0.4370 - acc: 0.8637 - val_loss: 0.4210 - val_acc: 0.8690
 Epoch 7/12
-10000/10000 [==============================] - 22s - loss: 0.1768 - acc: 0.9445 - val_loss: 0.3374 - val_acc: 0.8895
+10000/10000 [==============================] - 9s - loss: 0.3940 - acc: 0.8779 - val_loss: 0.3866 - val_acc: 0.8775
 Epoch 8/12
-10000/10000 [==============================] - 22s - loss: 0.1469 - acc: 0.9518 - val_loss: 0.3399 - val_acc: 0.8835
+10000/10000 [==============================] - 9s - loss: 0.3652 - acc: 0.8859 - val_loss: 0.3569 - val_acc: 0.8885
 Epoch 9/12
-10000/10000 [==============================] - 22s - loss: 0.1174 - acc: 0.9642 - val_loss: 0.4175 - val_acc: 0.8715
+10000/10000 [==============================] - 9s - loss: 0.3390 - acc: 0.8956 - val_loss: 0.3405 - val_acc: 0.8865
 Epoch 10/12
-10000/10000 [==============================] - 22s - loss: 0.0946 - acc: 0.9708 - val_loss: 0.3284 - val_acc: 0.8950
+10000/10000 [==============================] - 9s - loss: 0.3172 - acc: 0.9030 - val_loss: 0.3202 - val_acc: 0.9005
 Epoch 11/12
-10000/10000 [==============================] - 22s - loss: 0.0750 - acc: 0.9770 - val_loss: 0.3146 - val_acc: 0.9105
+10000/10000 [==============================] - 9s - loss: 0.2939 - acc: 0.9059 - val_loss: 0.3151 - val_acc: 0.9010
 Epoch 12/12
-10000/10000 [==============================] - 22s - loss: 0.0587 - acc: 0.9832 - val_loss: 0.2939 - val_acc: 0.9155
+10000/10000 [==============================] - 9s - loss: 0.2698 - acc: 0.9129 - val_loss: 0.3057 - val_acc: 0.9065
 YAML representation:
 class_name: Sequential
 config:
@@ -46,9 +46,9 @@ config:
     init: glorot_uniform
     input_dtype: float32
     name: convolution2d_1
-    nb_col: 5
-    nb_filter: 20
-    nb_row: 5
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
     subsample: &id001 !!python/tuple [1, 1]
     trainable: true
 - class_name: Convolution2D
@@ -64,27 +64,9 @@ config:
     dim_ordering: th
     init: glorot_uniform
     name: convolution2d_2
-    nb_col: 5
-    nb_filter: 50
-    nb_row: 5
-    subsample: *id001
-    trainable: true
-- class_name: Convolution2D
-  config:
-    W_constraint: null
-    W_regularizer: null
-    activation: relu
-    activity_regularizer: null
-    b_constraint: null
-    b_regularizer: null
-    bias: true
-    border_mode: valid
-    dim_ordering: th
-    init: glorot_uniform
-    name: convolution2d_3
-    nb_col: 5
-    nb_filter: 50
-    nb_row: 5
+    nb_col: 3
+    nb_filter: 32
+    nb_row: 3
     subsample: *id001
     trainable: true
 - class_name: MaxPooling2D
@@ -95,12 +77,16 @@ config:
     pool_size: &id002 !!python/tuple [2, 2]
     strides: *id002
     trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.25, trainable: true}
 - class_name: Flatten
   config: {name: flatten_1, trainable: true}
 - class_name: Dense
   config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
     b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
-    name: dense_1, output_dim: 100, trainable: true}
+    name: dense_1, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.5, trainable: true}
 - class_name: Dense
   config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
     b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
@@ -110,8 +96,8 @@ loss: str
 optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
 sample_weight_mode: null
 
-Test score: 0.293860707581
-Test accuracy: 0.9155
+Test score: 0.305702100575
+Test accuracy: 0.9065
 Done. ================================================
 
 
