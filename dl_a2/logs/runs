@@ -1,34 +1,33 @@
 C:\Users\agoia\AppData\Local\Continuum\Anaconda2\python.exe C:/Users/agoia/Dropbox/Projects/JKU/jku-dl/dl_a2/src/skeleton_with_logging.py
 Using Theano backend.
 Using gpu device 0: GeForce GT 730M (CNMeM is enabled with initial size: 75.0% of memory, cuDNN not available)
-from Best Practices for Convolutional Neural Networks Applied to Visual Document AnalysisPatrice Y. Simard, Dave Steinkraus, John C. Platt
 Using validation set instead of the actual testset
 (10000L, 1L, 28L, 28L)
 Train on 10000 samples, validate on 2000 samples
 Epoch 1/12
-10000/10000 [==============================] - 11s - loss: 1.7609 - acc: 0.4189 - val_loss: 1.2475 - val_acc: 0.5915
+10000/10000 [==============================] - 11s - loss: 1.3943 - acc: 0.5353 - val_loss: 1.0838 - val_acc: 0.6330
 Epoch 2/12
-10000/10000 [==============================] - 11s - loss: 0.9030 - acc: 0.7354 - val_loss: 0.8400 - val_acc: 0.7465
+10000/10000 [==============================] - 11s - loss: 0.6163 - acc: 0.8067 - val_loss: 0.6749 - val_acc: 0.7750
 Epoch 3/12
-10000/10000 [==============================] - 11s - loss: 0.6952 - acc: 0.8006 - val_loss: 0.7015 - val_acc: 0.7900
+10000/10000 [==============================] - 11s - loss: 0.4587 - acc: 0.8588 - val_loss: 0.5712 - val_acc: 0.8070
 Epoch 4/12
-10000/10000 [==============================] - 11s - loss: 0.5828 - acc: 0.8341 - val_loss: 0.6103 - val_acc: 0.8135
+10000/10000 [==============================] - 11s - loss: 0.3732 - acc: 0.8852 - val_loss: 0.6493 - val_acc: 0.7880
 Epoch 5/12
-10000/10000 [==============================] - 11s - loss: 0.5017 - acc: 0.8606 - val_loss: 0.5569 - val_acc: 0.8345
+10000/10000 [==============================] - 11s - loss: 0.3128 - acc: 0.9015 - val_loss: 0.3792 - val_acc: 0.8765
 Epoch 6/12
-10000/10000 [==============================] - 11s - loss: 0.4454 - acc: 0.8751 - val_loss: 0.5381 - val_acc: 0.8395
+10000/10000 [==============================] - 11s - loss: 0.2730 - acc: 0.9160 - val_loss: 0.3900 - val_acc: 0.8815
 Epoch 7/12
-10000/10000 [==============================] - 11s - loss: 0.3989 - acc: 0.8903 - val_loss: 0.4817 - val_acc: 0.8600
+10000/10000 [==============================] - 11s - loss: 0.2326 - acc: 0.9284 - val_loss: 0.4240 - val_acc: 0.8645
 Epoch 8/12
-10000/10000 [==============================] - 11s - loss: 0.3615 - acc: 0.9027 - val_loss: 0.4408 - val_acc: 0.8665
+10000/10000 [==============================] - 11s - loss: 0.2048 - acc: 0.9358 - val_loss: 0.3554 - val_acc: 0.8900
 Epoch 9/12
-10000/10000 [==============================] - 11s - loss: 0.3274 - acc: 0.9099 - val_loss: 0.4754 - val_acc: 0.8525
+10000/10000 [==============================] - 11s - loss: 0.1755 - acc: 0.9461 - val_loss: 0.3369 - val_acc: 0.8970
 Epoch 10/12
-10000/10000 [==============================] - 11s - loss: 0.3012 - acc: 0.9173 - val_loss: 0.4456 - val_acc: 0.8590
+10000/10000 [==============================] - 11s - loss: 0.1511 - acc: 0.9555 - val_loss: 0.3501 - val_acc: 0.8900
 Epoch 11/12
-10000/10000 [==============================] - 11s - loss: 0.2757 - acc: 0.9258 - val_loss: 0.4934 - val_acc: 0.8480
+10000/10000 [==============================] - 11s - loss: 0.1286 - acc: 0.9622 - val_loss: 0.3381 - val_acc: 0.8935
 Epoch 12/12
-10000/10000 [==============================] - 11s - loss: 0.2528 - acc: 0.9314 - val_loss: 0.4046 - val_acc: 0.8740
+10000/10000 [==============================] - 11s - loss: 0.1097 - acc: 0.9679 - val_loss: 0.3506 - val_acc: 0.8935
 YAML representation:
 class_name: Sequential
 config:
@@ -81,7 +80,7 @@ config:
 - class_name: Flatten
   config: {name: flatten_1, trainable: true}
 - class_name: Dense
-  config: {W_constraint: null, W_regularizer: null, activation: sigmoid, activity_regularizer: null,
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
     b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
     name: dense_1, output_dim: 100, trainable: true}
 - class_name: Dense
@@ -93,8 +92,8 @@ loss: str
 optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
 sample_weight_mode: null
 
-Test score: 0.404579951048
-Test accuracy: 0.874
+Test score: 0.350560325027
+Test accuracy: 0.8935
 Done. ================================================
 
 

@@ -51,7 +51,7 @@ def train_network(x_tr, y_tr, x_va, y_va):
     # model.add(Dropout(0.5))
 
     model.add(Flatten()) # flattens the input: from (None, 64, 32, 32) to (None, 65536)
-    model.add(Dense(100, activation='sigmoid')) # Dense(100) is a fully-connected layer with 100 hidden units.
+    model.add(Dense(100, activation='relu')) # Dense(100) is a fully-connected layer with 100 hidden units.
     # model.add(Dropout(0.5))    # model.add(Dropout(0.5))
     model.add(Dense(output_dim=10, activation='softmax'))
 
@@ -97,9 +97,7 @@ def setup_logging():
 if __name__ == '__main__':
 
     setup_logging()
-    logging.getLogger(__name__).info("from Best Practices for Convolutional Neural Networks \
-Applied to Visual Document Analysis\
-Patrice Y. Simard, Dave Steinkraus, John C. Platt")
+    # logging.getLogger(__name__).info("from ")
 
     x_tr = np.load('../downloads/train_x.npy')
     y_tr = np.load('../downloads/train_y.npy')
