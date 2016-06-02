@@ -55,10 +55,9 @@ def train_network(x_tr, y_tr, x_va, y_va):
 
 
     model.add(Flatten()) # flattens the input: from (None, 64, 32, 32) to (None, 65536)
-    model.add(Dense(120, activation='relu'))
-    model.add(Dropout(0.25))
+
     model.add(Dense(84, activation='relu')) # Dense(100) is a fully-connected layer with 100 hidden units.
-    model.add(Dropout(0.5))    # model.add(Dropout(0.5))
+    model.add(Dropout(0.25))    # model.add(Dropout(0.5))
     model.add(Dense(output_dim=10, activation='softmax'))
 
 
