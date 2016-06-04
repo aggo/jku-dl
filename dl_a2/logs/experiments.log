@@ -3832,3 +3832,342 @@ sample_weight_mode: null
 2016-06-04 14:45:00,371 === Test accuracy: 0.933
 2016-06-04 14:45:00,371 === Done. ================================================
 
+2016-06-04 14:59:33,875 === Using validation set instead of the actual testset
+2016-06-04 15:05:06,938 === Using validation set instead of the actual testset
+2016-06-04 15:05:37,032 === Using validation set instead of the actual testset
+2016-06-04 15:06:07,094 === Using validation set instead of the actual testset
+2016-06-04 15:06:17,905 === Using validation set instead of the actual testset
+2016-06-04 15:07:14,187 === Using validation set instead of the actual testset
+2016-06-04 15:07:36,653 === Using validation set instead of the actual testset
+2016-06-04 15:07:44,431 === Using validation set instead of the actual testset
+2016-06-04 15:07:59,403 === Using validation set instead of the actual testset
+2016-06-04 15:15:25,323 === Using validation set instead of the actual testset
+2016-06-04 15:15:38,194 === Using validation set instead of the actual testset
+2016-06-04 15:15:49,355 === Using validation set instead of the actual testset
+2016-06-04 15:15:58,591 === Using validation set instead of the actual testset
+2016-06-04 15:18:20,990 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, !!python/long '28', !!python/long '28']
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 5
+    nb_filter: 8
+    nb_row: 5
+    subsample: &id002 !!python/tuple [1, 1]
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id001 !!python/tuple [2, 2]
+    strides: *id001
+    trainable: true
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 5
+    nb_filter: 16
+    nb_row: 5
+    subsample: *id002
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_2
+    pool_size: &id003 !!python/tuple [2, 2]
+    strides: *id003
+    trainable: true
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {beta_1: 0.8999999761581421, beta_2: 0.9990000128746033, epsilon: 1.0e-08,
+  lr: 0.0020000000949949026, name: Adamax}
+sample_weight_mode: null
+
+2016-06-04 15:18:21,315 === Test score: 0.300254828691
+2016-06-04 15:18:21,315 === Test accuracy: 0.9035
+2016-06-04 15:18:21,315 === Done. ================================================
+
+2016-06-04 15:21:41,410 === Using validation set instead of the actual testset
+2016-06-04 15:22:09,381 === Using validation set instead of the actual testset
+2016-06-04 15:26:25,657 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, !!python/long '28', !!python/long '28']
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 5
+    nb_filter: 8
+    nb_row: 5
+    subsample: &id002 !!python/tuple [1, 1]
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id001 !!python/tuple [2, 2]
+    strides: *id001
+    trainable: true
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 5
+    nb_filter: 16
+    nb_row: 5
+    subsample: *id002
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_2
+    pool_size: &id003 !!python/tuple [2, 2]
+    strides: *id003
+    trainable: true
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 128, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.5, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {beta_1: 0.8999999761581421, beta_2: 0.9990000128746033, epsilon: 1.0e-08,
+  lr: 0.0020000000949949026, name: Adamax}
+sample_weight_mode: null
+
+2016-06-04 15:26:25,993 === Test score: 0.293095744014
+2016-06-04 15:26:25,993 === Test accuracy: 0.911
+2016-06-04 15:26:25,993 === Done. ================================================
+
+2016-06-04 15:36:29,000 === Using validation set instead of the actual testset
+2016-06-04 15:38:28,306 === Using validation set instead of the actual testset
+2016-06-04 15:45:03,897 === Using validation set instead of the actual testset
+2016-06-04 15:45:47,220 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, !!python/long '28', !!python/long '28']
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 5
+    nb_filter: 20
+    nb_row: 5
+    subsample: &id002 !!python/tuple [1, 1]
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id001 !!python/tuple [2, 2]
+    strides: *id001
+    trainable: true
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 5
+    nb_filter: 150
+    nb_row: 5
+    subsample: *id002
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_2
+    pool_size: &id003 !!python/tuple [2, 2]
+    strides: *id003
+    trainable: true
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 200, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {beta_1: 0.8999999761581421, beta_2: 0.9990000128746033, epsilon: 1.0e-08,
+  lr: 0.0020000000949949026, name: Adamax}
+sample_weight_mode: null
+
+2016-06-04 15:45:48,164 === Test score: 0.237106166542
+2016-06-04 15:45:48,164 === Test accuracy: 0.9235
+2016-06-04 15:45:48,164 === Done. ================================================
+
+2016-06-04 15:48:17,430 === Using validation set instead of the actual testset
+2016-06-04 15:56:56,302 === YAML representation: 
+class_name: Sequential
+config:
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    batch_input_shape: !!python/tuple [null, 1, !!python/long '28', !!python/long '28']
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    input_dtype: float32
+    name: convolution2d_1
+    nb_col: 5
+    nb_filter: 20
+    nb_row: 5
+    subsample: &id002 !!python/tuple [1, 1]
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_1
+    pool_size: &id001 !!python/tuple [2, 2]
+    strides: *id001
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.1, trainable: true}
+- class_name: Convolution2D
+  config:
+    W_constraint: null
+    W_regularizer: null
+    activation: relu
+    activity_regularizer: null
+    b_constraint: null
+    b_regularizer: null
+    bias: true
+    border_mode: valid
+    dim_ordering: th
+    init: glorot_uniform
+    name: convolution2d_2
+    nb_col: 5
+    nb_filter: 150
+    nb_row: 5
+    subsample: *id002
+    trainable: true
+- class_name: MaxPooling2D
+  config:
+    border_mode: valid
+    dim_ordering: th
+    name: maxpooling2d_2
+    pool_size: &id003 !!python/tuple [2, 2]
+    strides: *id003
+    trainable: true
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.1, trainable: true}
+- class_name: Flatten
+  config: {name: flatten_1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: relu, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_1, output_dim: 200, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_3, p: 0.1, trainable: true}
+- class_name: Dense
+  config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
+    b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
+    name: dense_2, output_dim: 10, trainable: true}
+keras_version: 1.0.3
+loss: str
+optimizer: {beta_1: 0.8999999761581421, beta_2: 0.9990000128746033, epsilon: 1.0e-08,
+  lr: 0.0020000000949949026, name: Adamax}
+sample_weight_mode: null
+
+2016-06-04 15:56:56,897 === Test score: 0.205665518124
+2016-06-04 15:56:56,897 === Test accuracy: 0.937
+2016-06-04 15:56:56,897 === Done. ================================================
+

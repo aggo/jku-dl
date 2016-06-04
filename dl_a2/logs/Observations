@@ -1,0 +1,2 @@
+Adding a dropout of 0.3 to the hidden layer of the network improves the accuracy
+by up to 0.1

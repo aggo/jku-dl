@@ -5,19 +5,23 @@ Using validation set instead of the actual testset
 (10000L, 1L, 28L, 28L)
 Train on 10000 samples, validate on 2000 samples
 Epoch 1/12
-10000/10000 [==============================] - 54s - loss: 0.6590 - acc: 0.7870 - val_loss: 0.3506 - val_acc: 0.8865
+10000/10000 [==============================] - 57s - loss: 0.6849 - acc: 0.7804 - val_loss: 0.3580 - val_acc: 0.8935
 Epoch 2/12
-10000/10000 [==============================] - 54s - loss: 0.3000 - acc: 0.9069 - val_loss: 0.3031 - val_acc: 0.9120
+10000/10000 [==============================] - 57s - loss: 0.3357 - acc: 0.8928 - val_loss: 0.3298 - val_acc: 0.8985
 Epoch 3/12
-10000/10000 [==============================] - 54s - loss: 0.2128 - acc: 0.9309 - val_loss: 0.2530 - val_acc: 0.9240
+10000/10000 [==============================] - 57s - loss: 0.2506 - acc: 0.9208 - val_loss: 0.2699 - val_acc: 0.9190
 Epoch 4/12
-10000/10000 [==============================] - 54s - loss: 0.1554 - acc: 0.9519 - val_loss: 0.2356 - val_acc: 0.9265
+10000/10000 [==============================] - 57s - loss: 0.1987 - acc: 0.9358 - val_loss: 0.2403 - val_acc: 0.9270
 Epoch 5/12
-10000/10000 [==============================] - 55s - loss: 0.1204 - acc: 0.9631 - val_loss: 0.2261 - val_acc: 0.9335
+10000/10000 [==============================] - 58s - loss: 0.1635 - acc: 0.9479 - val_loss: 0.2212 - val_acc: 0.9270
 Epoch 6/12
-10000/10000 [==============================] - 55s - loss: 0.0808 - acc: 0.9722 - val_loss: 0.2230 - val_acc: 0.9350
+10000/10000 [==============================] - 56s - loss: 0.1304 - acc: 0.9580 - val_loss: 0.2053 - val_acc: 0.9320
 Epoch 7/12
-10000/10000 [==============================] - 55s - loss: 0.0573 - acc: 0.9817 - val_loss: 0.2489 - val_acc: 0.9330
+10000/10000 [==============================] - 58s - loss: 0.1078 - acc: 0.9645 - val_loss: 0.1922 - val_acc: 0.9385
+Epoch 8/12
+10000/10000 [==============================] - 56s - loss: 0.0863 - acc: 0.9704 - val_loss: 0.1886 - val_acc: 0.9440
+Epoch 9/12
+10000/10000 [==============================] - 56s - loss: 0.0693 - acc: 0.9766 - val_loss: 0.2057 - val_acc: 0.9370
 YAML representation:
 class_name: Sequential
 config:
@@ -49,6 +53,8 @@ config:
     pool_size: &id001 !!python/tuple [2, 2]
     strides: *id001
     trainable: true
+- class_name: Dropout
+  config: {name: dropout_1, p: 0.1, trainable: true}
 - class_name: Convolution2D
   config:
     W_constraint: null
@@ -75,6 +81,8 @@ config:
     pool_size: &id003 !!python/tuple [2, 2]
     strides: *id003
     trainable: true
+- class_name: Dropout
+  config: {name: dropout_2, p: 0.1, trainable: true}
 - class_name: Flatten
   config: {name: flatten_1, trainable: true}
 - class_name: Dense
@@ -82,7 +90,7 @@ config:
     b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
     name: dense_1, output_dim: 200, trainable: true}
 - class_name: Dropout
-  config: {name: dropout_1, p: 0.1, trainable: true}
+  config: {name: dropout_3, p: 0.1, trainable: true}
 - class_name: Dense
   config: {W_constraint: null, W_regularizer: null, activation: softmax, activity_regularizer: null,
     b_constraint: null, b_regularizer: null, bias: true, init: glorot_uniform, input_dim: null,
@@ -93,8 +101,8 @@ optimizer: {beta_1: 0.8999999761581421, beta_2: 0.9990000128746033, epsilon: 1.0
   lr: 0.0020000000949949026, name: Adamax}
 sample_weight_mode: null
 
-Test score: 0.248935628816
-Test accuracy: 0.933
+Test score: 0.205665518124
+Test accuracy: 0.937
 Done. ================================================
 
 
