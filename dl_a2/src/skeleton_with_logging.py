@@ -3,6 +3,8 @@ import logging
 import sys
 import os
 import time
+
+import keras
 import numpy as np
 
 from keras.models import Sequential
@@ -21,7 +23,7 @@ layer_defs.push({type:'softmax', num_classes:10});
 
 
 
-
+earlyStopping=keras.callbacks.EarlyStopping(monitor='val_loss', patience=0, verbose=0, mode='auto')
 
 
 def train_network(x_tr, y_tr, x_va, y_va):
@@ -50,14 +52,13 @@ def train_network(x_tr, y_tr, x_va, y_va):
 
     model.add(MaxPooling2D(pool_size=(2, 2)))
 
-    model.add(Convolution2D(100, 5, 5, activation='relu'))
+    model.add(Convolution2D(150, 5, 5, activation='relu'))
     model.add(MaxPooling2D(pool_size=(2, 2)))
 
+    model.add(Flatten())                     # flattens the input: from (None, 64, 32, 32) to (None, 65536)
 
-    model.add(Flatten()) # flattens the input: from (None, 64, 32, 32) to (None, 65536)
-
-    model.add(Dense(84, activation='relu')) # Dense(100) is a fully-connected layer with 100 hidden units.
-    model.add(Dropout(0.25))    # model.add(Dropout(0.5))
+    model.add(Dense(200, activation='relu'))  # Dense(100) is a fully-connected layer with 100 hidden units.
+    model.add(Dropout(0.1))                  # model.add(Dropout(0.5))
     model.add(Dense(output_dim=10, activation='softmax'))
 
 
@@ -67,7 +68,7 @@ def train_network(x_tr, y_tr, x_va, y_va):
                   metrics=['accuracy'])
 
     history = model.fit(x_tr, y_tr, batch_size=batch_size, nb_epoch=n_epochs,
-              verbose=1, validation_data=(x_va, y_va))
+              verbose=1, validation_data=(x_va, y_va), callbacks=[earlyStopping])
 
     yaml = model.to_yaml()
     logging.getLogger(__name__).info("YAML representation: \n%s",yaml)
