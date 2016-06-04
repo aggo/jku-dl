@@ -5,21 +5,19 @@ Using validation set instead of the actual testset
 (10000L, 1L, 28L, 28L)
 Train on 10000 samples, validate on 2000 samples
 Epoch 1/12
-10000/10000 [==============================] - 67s - loss: 0.6696 - acc: 0.7816 - val_loss: 0.3869 - val_acc: 0.8775
+10000/10000 [==============================] - 54s - loss: 0.6590 - acc: 0.7870 - val_loss: 0.3506 - val_acc: 0.8865
 Epoch 2/12
-10000/10000 [==============================] - 66s - loss: 0.3448 - acc: 0.8948 - val_loss: 0.3350 - val_acc: 0.8985
+10000/10000 [==============================] - 54s - loss: 0.3000 - acc: 0.9069 - val_loss: 0.3031 - val_acc: 0.9120
 Epoch 3/12
-10000/10000 [==============================] - 66s - loss: 0.2681 - acc: 0.9220 - val_loss: 0.3092 - val_acc: 0.9160
+10000/10000 [==============================] - 54s - loss: 0.2128 - acc: 0.9309 - val_loss: 0.2530 - val_acc: 0.9240
 Epoch 4/12
-10000/10000 [==============================] - 66s - loss: 0.2166 - acc: 0.9349 - val_loss: 0.2789 - val_acc: 0.9240
+10000/10000 [==============================] - 54s - loss: 0.1554 - acc: 0.9519 - val_loss: 0.2356 - val_acc: 0.9265
 Epoch 5/12
-10000/10000 [==============================] - 66s - loss: 0.1872 - acc: 0.9445 - val_loss: 0.2675 - val_acc: 0.9255
+10000/10000 [==============================] - 55s - loss: 0.1204 - acc: 0.9631 - val_loss: 0.2261 - val_acc: 0.9335
 Epoch 6/12
-10000/10000 [==============================] - 67s - loss: 0.1556 - acc: 0.9548 - val_loss: 0.2535 - val_acc: 0.9245
+10000/10000 [==============================] - 55s - loss: 0.0808 - acc: 0.9722 - val_loss: 0.2230 - val_acc: 0.9350
 Epoch 7/12
-10000/10000 [==============================] - 66s - loss: 0.1380 - acc: 0.9608 - val_loss: 0.2527 - val_acc: 0.9285
-Epoch 8/12
-10000/10000 [==============================] - 67s - loss: 0.1174 - acc: 0.9687 - val_loss: 0.2698 - val_acc: 0.9340
+10000/10000 [==============================] - 55s - loss: 0.0573 - acc: 0.9817 - val_loss: 0.2489 - val_acc: 0.9330
 YAML representation:
 class_name: Sequential
 config:
@@ -91,11 +89,12 @@ config:
     name: dense_2, output_dim: 10, trainable: true}
 keras_version: 1.0.3
 loss: str
-optimizer: {epsilon: 1.0e-08, lr: 1.0, name: Adadelta, rho: 0.95}
+optimizer: {beta_1: 0.8999999761581421, beta_2: 0.9990000128746033, epsilon: 1.0e-08,
+  lr: 0.0020000000949949026, name: Adamax}
 sample_weight_mode: null
 
-Test score: 0.269798689328
-Test accuracy: 0.934
+Test score: 0.248935628816
+Test accuracy: 0.933
 Done. ================================================
 
 
